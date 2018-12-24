@@ -1,8 +1,9 @@
 {
     "name": "oblivion",
-    "displayName": "oblivion",
+    "publisher": "parityb1t",
+    "displayName": "oblivion++",
     "description": "Oblivion theme for C++",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.29.0"
     },
