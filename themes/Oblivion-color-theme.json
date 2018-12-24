@@ -8,13 +8,37 @@
 			}
 		},
 		{
+			"name": "include directices",
 			"scope": [
-				"meta.embedded",
-				"source.groovy.embedded"
+				"punctuation.definition.directive.c",
+				"keyword.control.directive.include.c",
+				"keyword.control.directive.define.c",
+				"keyword.control.directive.conditional.c"
 			],
 			"settings": {
-				"background": "#2e3436",
-				"foreground": "#555753"
+				"foreground": "#ef2929",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "namespaces",
+			"scope": "meta.namespace-block.cpp",
+			"settings": {
+				"foreground": "#ef2929",
+			}
+		},
+		{
+			"name": "type names",
+			"scope": "entity.name.type.cpp",
+			"settings": {
+				"foreground": "#8ae234",
+			}
+		},
+		{
+			"name": "class keyword",
+			"scope": "storage.type.cpp",
+			"settings": {
+				"foreground": "#ad7fa8",
 			}
 		},
 		{
@@ -28,14 +52,44 @@
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#729fcf"
+				"foreground": "#fce94f"
 			}
 		},
 		{
-			"name": "Number",
-			"scope": "constant.numeric",
+			"name": "operators",
+			"scope": [
+				"keyword.operator.c",
+				"keyword.control.namespace.$2",
+				"punctuation.terminator.statement.c",
+				"punctuation.separator.namespace.access.cpp",
+				"punctuation.definition.scope.cpp",
+				"keyword.operator.comparison.c",
+				"keyword.operator.assignment.compound.c",
+				"keyword.operator.assignment.c",
+				"keyword.operator.bitwise.shift.c",
+				"punctuation.section.block.begin.bracket.curly.cpp",
+				"punctuation.section.block.end.bracket.curly.cpp",
+				"punctuation.section.block.begin.bracket.curly.c",
+				"punctuation.section.block.end.bracket.curly.c",
+				"punctuation.section.parens.begin.bracket.round.c",
+				"punctuation.section.parens.end.bracket.round.c",
+				"punctuation.section.parameters.begin.bracket.round.c",
+				"punctuation.section.parameters.end.bracket.round.c",
+				"punctuation.section.arguments.begin.bracket.round.c",
+				"punctuation.section.arguments.end.bracket.round.c",
+				"punctuation.definition.begin.bracket.square.c",
+				"punctuation.definition.end.bracket.square.c",
+				"punctuation.definition.parameters.begin.c",
+				"punctuation.definition.parameters.end.c",
+				"meta.angle-brackets.cpp",
+				"punctuation.separator.delimiter.c",
+				"punctuation.definition.parameters.c",
+				"meta.block.c",
+				"meta.class-struct-block.cpp",
+			],
 			"settings": {
-				"foreground": "#ad7fa8"
+				"fontStyle": "",
+				"foreground": "#eeeeec"
 			}
 		},
 		{
@@ -56,8 +110,26 @@
 			}
 		},
 		{
+			"name": "functions",
+			"scope": [
+				"meta.function.constructor.cpp",
+				"entity.name.function.c"
+			],
+			"settings": {
+				"foreground": "#729fcf",
+			}
+		},
+		{
 			"name": "Variable",
 			"scope": "variable",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#8ae234"
+			}
+		},
+		{
+			"name": "functions general",
+			"scope": "meta.function.c",
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#8ae234"
@@ -68,110 +140,44 @@
 			"scope": "keyword",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#f57900"
+				"foreground": "#ad7fa8"
 			}
 		},
 		{
-			// C++ qualifiers
-			"name": "Storage",
-			"scope": "storage",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#fce94f"
-			}
-		},
-		{
-			// C++ types
-			"name": "Storage type",
-			"scope": "storage.type",
+			"name": "return types",
+			"scope": "storage.type.c",
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#8ae234"
 			}
 		},
 		{
-			"name": "Class name",
-			"scope": [
-				"entity.name.class",
-				"entity.name.type"
-			],
+			"name": "scope qualifiers",
+			"scope": "storage.modifier",
 			"settings": {
-				"fontStyle": "",
-				"foreground": "#d3d7cf"
+				"fontStyle": "bold",
+				"foreground": "#ad7fa8"
 			}
 		},
 		{
-			"name": "Inherited class",
-			"scope": "entity.other.inherited-class",
+			"name": "constants",
+			"scope": "constant.language.c",
 			"settings": {
-				"fontStyle": "italic underline",
-				"foreground": "#f57900"
+				"foreground": "#ef2929"
 			}
 		},
 		{
-			"name": "Function name",
-			"scope": "entity.name.function",
+			"name": "template",
+			"scope": "storage.type.template.cpp",
 			"settings": {
-				"fontStyle": "",
-				"foreground": "#edd400"
+				"foreground": "#ad7fa8"
 			}
 		},
 		{
-			"name": "Function argument",
-			"scope": "variable.parameter",
+			"name": "inheritance qualifier",
+			"scope": "storage.type.modifier.cpp",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#729fcf"
-			}
-		},
-		{
-			"name": "Tag name",
-			"scope": "entity.name.tag",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#fce94f"
-			}
-		},
-		{
-			"name": "Tag attribute",
-			"scope": "entity.other.attribute-name",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#edd400"
-			}
-		},
-		{
-			"name": "Library function",
-			"scope": "support.function",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#c4a000"
-			}
-		},
-		{
-			"name": "Library constant",
-			"scope": "support.constant",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#c4a000"
-			}
-		},
-		{
-			"name": "Library class/type",
-			"scope": [
-				"support.type",
-				"support.class"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#c4a000"
-			}
-		},
-		{
-			"name": "Library variable",
-			"scope": "support.other.variable",
-			"settings": {
-				"fontStyle": ""
+				"foreground": "#ad7fa8"
 			}
 		},
 		{
