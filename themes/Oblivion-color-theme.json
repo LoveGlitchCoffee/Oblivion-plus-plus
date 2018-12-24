@@ -388,7 +388,7 @@
 		// Workbench: Side Bar
 		"sideBar.background": "#555753",
 		// "sideBarTitle.foreground": "",
-		"sideBarSectionHeader.background": "#3465a4",
+		"sideBarSectionHeader.background": "#8f5902",
 		// Workbench: Status Bar
 		"statusBar.background": "#555753",
 		"statusBar.noFolderBackground": "#ef2929",
@@ -409,21 +409,21 @@
 		"extensionButton.prominentBackground": "#5c3566",
 		"extensionButton.prominentHoverBackground": "#ad7fa8",
 		// Workbench: Terminal
-		"terminal.ansiBlack": "#111111",
-		"terminal.ansiRed": "#ff9da4",
-		"terminal.ansiGreen": "#d1f1a9",
-		"terminal.ansiYellow": "#ffeead",
-		"terminal.ansiBlue": "#bbdaff",
-		"terminal.ansiMagenta": "#ebbbff",
-		"terminal.ansiCyan": "#99ffff",
-		"terminal.ansiWhite": "#cccccc",
-		"terminal.ansiBrightBlack": "#333333",
-		"terminal.ansiBrightRed": "#ff7882",
-		"terminal.ansiBrightGreen": "#b8f171",
-		"terminal.ansiBrightYellow": "#ffe580",
-		"terminal.ansiBrightBlue": "#80baff",
-		"terminal.ansiBrightMagenta": "#d778ff",
-		"terminal.ansiBrightCyan": "#78ffff",
-		"terminal.ansiBrightWhite": "#ffffff"
+		"terminal.ansiBlack": "#555753",
+		"terminal.ansiRed": "#cc0000",
+		"terminal.ansiGreen": "#73d216",
+		"terminal.ansiYellow": "#edd400",
+		"terminal.ansiBlue": "#ad7fa8", // for ozsh powerline
+		"terminal.ansiMagenta": "#5c3566",
+		"terminal.ansiCyan": "#3465a4",
+		"terminal.ansiWhite": "#d3d7cf",
+		"terminal.ansiBrightBlack": "#888a85",
+		"terminal.ansiBrightRed": "#ef2929",
+		"terminal.ansiBrightGreen": "#8ae234",
+		"terminal.ansiBrightYellow": "#fce94f",
+		"terminal.ansiBrightBlue": "#729fcf",
+		"terminal.ansiBrightMagenta": "#ad7af8",
+		"terminal.ansiBrightCyan": "#f57900", // for ozsh dir
+		"terminal.ansiBrightWhite": "#eeeeec"
 	}
 }
