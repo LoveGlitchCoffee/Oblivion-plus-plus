@@ -1,8 +1,12 @@
 {
     "name": "oblivion",
     "publisher": "parityb1t",
-    "displayName": "oblivion++",
+    "displayName": "Oblivion++",
     "description": "Oblivion theme for C++",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ParityB1t/Oblivion-"
+    },
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.29.0"
