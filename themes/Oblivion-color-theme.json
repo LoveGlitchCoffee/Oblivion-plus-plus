@@ -29,15 +29,16 @@
 		},
 		{
 			"name": "type names",
-			"scope": "entity.name.type.cpp",
+			"scope": ["entity.name.type.cpp", "entity.name.type.inherited.cpp"],
 			"settings": {
 				"foreground": "#8ae234",
 			}
 		},
 		{
-			"name": "class keyword",
+			"name": "class namespace keyword",
 			"scope": "storage.type.cpp",
-			"settings": {
+			"settings": {				
+				"fontStyle": "bold",
 				"foreground": "#ad7fa8",
 			}
 		},
