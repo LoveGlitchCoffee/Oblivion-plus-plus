@@ -2,12 +2,6 @@
 	"name": "Oblivion",
 	"tokenColors": [
 		{
-			"settings": {
-				"background": "#2e3436",
-				"foreground": "#2e3436"
-			}
-		},
-		{
 			"name": "include directices",
 			"scope": [
 				"punctuation.definition.directive.c",
@@ -27,7 +21,9 @@
 			"name": "namespaces",
 			"scope": [
 				"meta.namespace-block.cpp",
-				"entity.scope.name.cpp"
+				"entity.scope.name.cpp",
+				"entity.name.type.namespace.scope-resolution.cpp",
+				"entity.name.type.namespace.cpp"
 			],
 			"settings": {
 				"foreground": "#ef2929",
@@ -39,11 +35,16 @@
 				"entity.name.type.cpp",
 				"entity.name.type.inherited.cpp",
 				"storage.type.template.argument.class",
+				"storage.type.primitive.cpp",
 				"entity.name.type.template.cpp",
 				"storage.type.user-defined.cpp", // template
 				"meta.function.definition.parameters.cpp", // parameter type
 				"meta.block.c",
 				"meta.block.cpp",
+				"meta.body.namespace.cpp",
+				"meta.block.namespace.cpp",
+				"meta.body.class.cpp",
+				"entity.name.type.class.cpp"
 			],
 			"settings": {
 				"foreground": "#8ae234",
@@ -51,7 +52,11 @@
 		},
 		{
 			"name": "class namespace keyword",
-			"scope": "storage.type.class.cpp",
+			"scope": [
+				"storage.type.class.cpp",
+				"storage.type.enum.cpp",
+				"storage.type.enum.enum-key.class.cpp"
+			],
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#ad7fa8",
@@ -119,7 +124,17 @@
 				"punctuation.definition.parameters.end.destructor.cpp",
 				"punctuation.section.angle-brackets.start.template.definition.cpp",
 				"punctuation.section.angle-brackets.end.template.definition.cpp",
-				"meta.class-struct-block.cpp"
+				"meta.class-struct-block.cpp",
+				"punctuation.section.block.begin.bracket.curly.namespace.cpp",
+				"punctuation.section.block.end.bracket.curly.namespace.cpp",
+				"punctuation.section.block.begin.bracket.curly.class.cpp",
+				"punctuation.section.block.end.bracket.curly.class.cpp",
+				"punctuation.section.block.begin.bracket.curly.enum.cpp",
+				"punctuation.section.block.end.bracket.curly.enum.cpp",
+				"punctuation.section.arguments.begin.bracket.round.operator.sizeof.cpp",
+				"punctuation.section.arguments.end.bracket.round.operator.sizeof.cpp",
+				"punctuation.section.block.begin.bracket.curly.switch.cpp",
+				"punctuation.section.block.end.bracket.curly.switch.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -132,7 +147,11 @@
 				"meta.function-call.member.cpp",
 				"meta.function-call.cpp",
 				"variable.object.cpp",
-				"meta.block.parens.cpp",				
+				"meta.block.parens.cpp",
+				"variable.parameter.cpp",
+				"meta.parens.block.cpp",
+				"variable.other.object.cpp",
+				"variable.other.object.access.cpp", // works better as this colour, asumming only pass names to functions
 				"variable.parameter.probably.cpp" // works better as this colour
 			],
 			"settings": {
@@ -140,17 +159,11 @@
 			}
 		},
 		{
-			"name": "Built-in constant",
-			"scope": "constant.language",
-			"settings": {
-				"foreground": "#8ae234"
-			}
-		},
-		{
 			"name": "User-defined constant",
 			"scope": [
 				"constant.character",
-				"constant.other"
+				"constant.other",
+				"constant.numeric.decimal.cpp" // test
 			],
 			"settings": {
 				"foreground": "#ce5c00"
@@ -171,10 +184,12 @@
 			}
 		},
 		{
-			"name": "Parameters",
+			"name": "Parameters/Access/Call Member",
 			"scope": [
-				"variable",				
-				"meta.function.constructor.cpp" // constructor param
+				"meta.function.constructor.cpp", // constructor param
+				"meta.bracket.square.access.cpp",
+				"meta.function-call.member",
+				"variable.other.property.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -214,7 +229,12 @@
 		},
 		{
 			"name": "scope qualifiers",
-			"scope": "storage.modifier",
+			"scope": [
+				"storage.modifier",
+				"storage.type.modifier.access.public.cpp",
+				"storage.type.modifier.access.private.cpp",
+				"storage.type.modifier.access.protected.cpp"
+			],
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#ad7fa8"
@@ -225,6 +245,8 @@
 			"scope": [
 				"constant.language.c",
 				"constant.language.cpp",
+				"constant.language.true.cpp",
+				"constant.language.false.cpp"
 			],
 			"settings": {
 				"foreground": "#ef2929"
@@ -243,10 +265,12 @@
 			[
 				"storage.type.modifier.cpp",
 				"storage.type.modifier.access.control.public.cpp",
-				"storage.type.modifier.access.control.private.cpp"
+				"storage.type.modifier.access.control.private.cpp",
+				"storage.type.modifier.access.control.protected.cpp"
 			],
 			"settings": {
-				"foreground": "#ad7fa8"
+				"foreground": "#ad7fa8",
+				"fontStyle": "bold"
 			}
 		},
 		{
