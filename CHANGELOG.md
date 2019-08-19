@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.3.0]
+- VSCode adjusted TM scope. Changed accordingly
+
 ## [1.2.0]
 - VSCode added more TM scope for cpp.
   - namespace and typenames now have different colours when declaring

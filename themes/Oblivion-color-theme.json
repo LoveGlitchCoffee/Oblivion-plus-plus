@@ -2,15 +2,10 @@
 	"name": "Oblivion",
 	"tokenColors": [
 		{
-			"name": "include directices",
+			"name": "Directives (include, ifdef)",
 			"scope": [
-				"punctuation.definition.directive.c",
-				"keyword.control.directive.include.c",
-				"keyword.control.directive.include.cpp",
-				"keyword.control.directive.define.c",
-				"keyword.control.directive.define.cpp",
-				"keyword.control.directive.conditional.c",
-				"keyword.control.directive.conditional.cpp"
+				"punctuation.definition.directive",
+				"keyword.control.directive"
 			],
 			"settings": {
 				"foreground": "#ef2929",
@@ -18,44 +13,41 @@
 			}
 		},
 		{
-			"name": "namespaces",
+			"name": "Scope Resolution",
 			"scope": [
-				"meta.namespace-block.cpp",
-				"entity.scope.name.cpp",
-				"entity.name.type.namespace.scope-resolution.cpp",
-				"entity.name.type.namespace.cpp"
+				"entity.name.scope-resolution",
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#ef2929",
 			}
 		},
 		{
-			"name": "type names",
-			"scope": [
-				"entity.name.type.cpp",
-				"entity.name.type.inherited.cpp",
-				"storage.type.template.argument.class",
-				"storage.type.primitive.cpp",
-				"entity.name.type.template.cpp",
-				"storage.type.user-defined.cpp", // template
-				"meta.function.definition.parameters.cpp", // parameter type
-				"meta.block.c",
-				"meta.block.cpp",
-				"meta.body.namespace.cpp",
-				"meta.block.namespace.cpp",
-				"meta.body.class.cpp",
-				"entity.name.type.class.cpp"
+			"name": "Namespaces",
+			"scope": [				
+				"entity.name.namespace",
+				"meta.body.namespace.cpp"
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#8ae234",
 			}
 		},
 		{
-			"name": "class namespace keyword",
+			"name": "Type Names",
 			"scope": [
-				"storage.type.class.cpp",
-				"storage.type.enum.cpp",
-				"storage.type.enum.enum-key.class.cpp"
+				"entity.name.type",
+				"storage.type.built-in"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#8ae234",
+			}
+		},
+		{
+			"name": "Storage type",
+			"scope": [
+				"storage.type",
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -64,77 +56,34 @@
 		},
 		{
 			"name": "Comment",
-			"scope": "comment",
+			"scope": [
+				"comment",
+				 "punctuation.definition.comment"
+			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#888a85"
 			}
 		},
 		{
 			"name": "String",
-			"scope": "string",
+			"scope": [
+				"string",
+				"punctuation.definition.string"
+			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#fce94f"
 			}
 		},
 		{
-			"name": "operators",
+			"name": "Operators",
 			"scope": [
-				"keyword.operator.c",
-				"keyword.control.namespace.$2",
-				"punctuation.terminator.statement.c",
-				"punctuation.separator.namespace.access.cpp",
-				"punctuation.definition.scope.cpp",
-				"keyword.operator.comparison.c",
-				"keyword.operator.assignment.compound.c",
-				"keyword.operator.assignment.c",
-				"keyword.operator.bitwise.shift.c",
-				"punctuation.section.block.begin.bracket.curly.cpp",
-				"punctuation.section.block.end.bracket.curly.cpp",
-				"punctuation.section.block.begin.bracket.curly.c",
-				"punctuation.section.block.end.bracket.curly.c",
-				"punctuation.section.parens.begin.bracket.round.c",
-				"punctuation.section.parens.begin.bracket.round.cpp",
-				"punctuation.section.parens.end.bracket.round.cpp",
-				"punctuation.section.parens.end.bracket.round.c",
-				"punctuation.section.parameters.begin.bracket.round.c",
-				"punctuation.section.parameters.end.bracket.round.c",
-				"punctuation.section.parameters.begin.bracket.round.cpp",
-				"punctuation.section.parameters.end.bracket.round.cpp",
-				"punctuation.section.arguments.begin.bracket.round.c",
-				"punctuation.section.arguments.end.bracket.round.c",
-				"punctuation.section.arguments.begin.bracket.round.cpp",
-				"punctuation.section.arguments.end.bracket.round.cpp",
-				"punctuation.definition.begin.bracket.square.c",
-				"punctuation.definition.end.bracket.square.c",
-				"punctuation.definition.parameters.begin.c",
-				"punctuation.definition.parameters.end.c",
-				"punctuation.definition.parameters.begin.constructor.cpp",
-				"punctuation.definition.parameters.end.constructor.cpp",
-				"punctuation.section.arguments.begin.bracket.round.function.member.cpp",
-				"punctuation.section.arguments.end.bracket.round.function.member.cpp",
-				"punctuation.separator.pointer-access.cpp",
-				"meta.angle-brackets.cpp",
-				"punctuation.separator.delimiter.c",
-				"punctuation.separator.delimiter.cpp",
-				"punctuation.definition.parameters.c",
-				"punctuation.terminator.statement.cpp",
-				"punctuation.definition.begin.bracket.square.cpp",
-				"punctuation.definition.end.bracket.square.cpp",
-				"punctuation.definition.parameters.begin.destructor.cpp",
-				"punctuation.definition.parameters.end.destructor.cpp",
-				"punctuation.section.angle-brackets.start.template.definition.cpp",
-				"punctuation.section.angle-brackets.end.template.definition.cpp",
-				"meta.class-struct-block.cpp",
-				"punctuation.section.block.begin.bracket.curly.namespace.cpp",
-				"punctuation.section.block.end.bracket.curly.namespace.cpp",
-				"punctuation.section.block.begin.bracket.curly.class.cpp",
-				"punctuation.section.block.end.bracket.curly.class.cpp",
-				"punctuation.section.block.begin.bracket.curly.enum.cpp",
-				"punctuation.section.block.end.bracket.curly.enum.cpp",
-				"punctuation.section.arguments.begin.bracket.round.operator.sizeof.cpp",
-				"punctuation.section.arguments.end.bracket.round.operator.sizeof.cpp",
-				"punctuation.section.block.begin.bracket.curly.switch.cpp",
-				"punctuation.section.block.end.bracket.curly.switch.cpp"
+				"punctuation.section",
+				"punctuation.definition",
+				"punctuation.separator",
+				"punctuation.terminator",
+				"meta.function.definition.special.constructor"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -144,52 +93,44 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"meta.function-call.member.cpp",
-				"meta.function-call.cpp",
-				"variable.object.cpp",
-				"meta.block.parens.cpp",
-				"variable.parameter.cpp",
-				"meta.parens.block.cpp",
-				"variable.other.object.cpp",
-				"variable.other.object.access.cpp", // works better as this colour, asumming only pass names to functions
-				"variable.parameter.probably.cpp" // works better as this colour
+				"meta.body.function.definition",
+				"meta.block",
+				
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#eeeeec"
 			}
 		},
 		{
-			"name": "User-defined constant",
+			"name": "Other Constants (numeric and char)",
 			"scope": [
 				"constant.character",
 				"constant.other",
-				"constant.numeric.decimal.cpp" // test
+				"constant.numeric.decimal.cpp"
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#ce5c00"
 			}
 		},
 		{
-			"name": "functions",
+			"name": "Functions",
 			"scope": [
-				"entity.name.function.constructor.cpp",
-				"entity.name.function.c",
-				"entity.name.function.cpp",
-				"entity.name.function.member.cpp",
-				"entity.name.function.call.cpp",
-				"entity.name.function.destructor.cpp"
+				"entity.name.function"
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#729fcf",
 			}
 		},
 		{
-			"name": "Parameters/Access/Call Member",
+			"name": "Access members",
 			"scope": [
-				"meta.function.constructor.cpp", // constructor param
 				"meta.bracket.square.access.cpp",
-				"meta.function-call.member",
-				"variable.other.property.cpp"
+				"variable.other.object.access.cpp", // works better as this colour, asumming only pass names to functions
+				"variable.other.property",
+				"variable.other.object.property.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -197,8 +138,10 @@
 			}
 		},
 		{
-			"name": "functions general",
-			"scope": "meta.function.c",
+			"name": "User-defined values (enum values) ",
+			"scope": [
+				"meta.conditional.case.cpp"
+			],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#8ae234"
@@ -207,8 +150,7 @@
 		{
 			"name": "Keyword",
 			"scope": [
-				"keyword",
-				"storage.type.template.argument.class"
+				"keyword"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -216,19 +158,7 @@
 			}
 		},
 		{
-			"name": "return types",
-			"scope": [
-				"storage.type.c",
-				"storage.type.language.cpp",
-				"storage.type.language.primitive.cpp"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#8ae234"
-			}
-		},
-		{
-			"name": "scope qualifiers",
+			"name": "Scope Qualifiers",
 			"scope": [
 				"storage.modifier",
 				"storage.type.modifier.access.public.cpp",
@@ -241,7 +171,7 @@
 			}
 		},
 		{
-			"name": "constants",
+			"name": "Constants",
 			"scope": [
 				"constant.language.c",
 				"constant.language.cpp",
@@ -249,28 +179,27 @@
 				"constant.language.false.cpp"
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#ef2929"
 			}
 		},
 		{
-			"name": "template",
+			"name": "Template keyword",
 			"scope": "storage.type.template.cpp",
 			"settings": {
+				"fontStyle": "bold",
 				"foreground": "#ad7fa8"
 			}
 		},
 		{
-			"name": "inheritance qualifier",
+			"name": "Inheritance Qualifier",
 			"scope":
 			[
-				"storage.type.modifier.cpp",
-				"storage.type.modifier.access.control.public.cpp",
-				"storage.type.modifier.access.control.private.cpp",
-				"storage.type.modifier.access.control.protected.cpp"
+				"entity.name.type.inherited"
 			],
 			"settings": {
-				"foreground": "#ad7fa8",
-				"fontStyle": "bold"
+				"fontStyle": "",
+				"foreground": "#ad7fa8"
 			}
 		},
 		{
