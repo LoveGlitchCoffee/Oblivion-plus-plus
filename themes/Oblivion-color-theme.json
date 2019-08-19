@@ -15,7 +15,7 @@
 		{
 			"name": "Scope Resolution",
 			"scope": [
-				"entity.name.scope-resolution",
+				"entity.name.type.namespace.scope-resolution",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -24,9 +24,9 @@
 		},
 		{
 			"name": "Namespaces",
-			"scope": [				
+			"scope": [
 				"entity.name.namespace",
-				"meta.body.namespace.cpp"
+				"meta.body.namespace.cpp",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -37,7 +37,10 @@
 			"name": "Type Names",
 			"scope": [
 				"entity.name.type",
-				"storage.type.built-in"
+				"storage.type.primitive",
+				"storage.type.user-defined",
+				"meta.function.definition.parameters.cpp",
+				"storage.type",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -47,7 +50,10 @@
 		{
 			"name": "Storage type",
 			"scope": [
-				"storage.type",
+				"storage.type.class",
+				"storage.type.template.cpp",
+				"storage.type.template.argument.class",
+				"storage.type.namespace.definition.cpp"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -83,7 +89,7 @@
 				"punctuation.definition",
 				"punctuation.separator",
 				"punctuation.terminator",
-				"meta.function.definition.special.constructor"
+				"meta.function.definition.special.constructor",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -95,7 +101,7 @@
 			"scope": [
 				"meta.body.function.definition",
 				"meta.block",
-				
+				"variable.parameter.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -161,9 +167,9 @@
 			"name": "Scope Qualifiers",
 			"scope": [
 				"storage.modifier",
-				"storage.type.modifier.access.public.cpp",
-				"storage.type.modifier.access.private.cpp",
-				"storage.type.modifier.access.protected.cpp"
+				"storage.type.modifier.access.control.public.cpp",
+				"storage.type.modifier.access.control.private.cpp",
+				"storage.type.modifier.access.control.protected.cpp"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -184,14 +190,6 @@
 			}
 		},
 		{
-			"name": "Template keyword",
-			"scope": "storage.type.template.cpp",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#ad7fa8"
-			}
-		},
-		{
 			"name": "Inheritance Qualifier",
 			"scope":
 			[
@@ -206,7 +204,6 @@
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
-				"background": "#F92672",
 				"fontStyle": "",
 				"foreground": "#ef2929"
 			}
@@ -215,7 +212,6 @@
 			"name": "Invalid deprecated",
 			"scope": "invalid.deprecated",
 			"settings": {
-				"background": "#AE81FF",
 				"foreground": "#ef2929"
 			}
 		},
@@ -226,7 +222,6 @@
 				"meta.diff.header"
 			],
 			"settings": {
-				"background": "#b58900",
 				"fontStyle": "italic",
 				"foreground": "#babdb6"
 			}
@@ -235,7 +230,6 @@
 			"name": "diff: deleted",
 			"scope": "markup.deleted",
 			"settings": {
-				"background": "#eee8d5",
 				"fontStyle": "",
 				"foreground": "#a40000"
 			}
@@ -244,7 +238,6 @@
 			"name": "diff: changed",
 			"scope": "markup.changed",
 			"settings": {
-				"background": "#eee8d5",
 				"fontStyle": "",
 				"foreground": "#f57900"
 			}
@@ -253,7 +246,6 @@
 			"name": "diff: inserted",
 			"scope": "markup.inserted",
 			"settings": {
-				"background": "#eee8d5",
 				"foreground": "#8ae234"
 			}
 		},
@@ -392,7 +384,6 @@
 		"tab.border": "#2e3436",
 		// "tab.activeBackground": "",
 		"tab.inactiveBackground": "#555753",
-		"tab.modifiedBorder": "#75507b",
 		// "tab.activeForeground": "",
 		// "tab.inactiveForeground": "",
 		// Workbench: Activity Bar
