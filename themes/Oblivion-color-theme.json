@@ -53,7 +53,8 @@
 				"storage.type.class",
 				"storage.type.template.cpp",
 				"storage.type.template.argument.class",
-				"storage.type.namespace.definition.cpp"
+				"storage.type.namespace.definition.cpp",
+				"storage.type.namespace.directive.cpp"
 			],
 			"settings": {
 				"fontStyle": "bold",
