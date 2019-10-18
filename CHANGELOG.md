@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.3.3]
+- More adjustments to adapt to new TM scope
+
+## [1.3.2]
+- More adjustments to adapt to new TM scope
+
+## [1.3.1]
+- More adjustments to adapt to new TM scope
+
 ## [1.3.0]
 - VSCode adjusted TM scope. Changed accordingly
 

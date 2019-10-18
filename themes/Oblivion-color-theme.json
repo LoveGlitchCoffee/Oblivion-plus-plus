@@ -15,7 +15,7 @@
 		{
 			"name": "Scope Resolution",
 			"scope": [
-				"entity.name.type.namespace.scope-resolution",
+				"entity.name.scope-resolution",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -102,7 +102,8 @@
 			"scope": [
 				"meta.body.function.definition",
 				"meta.block",
-				"variable.parameter.cpp"
+				"variable.parameter.cpp",
+				"variable.other.object.access.cpp", // works better as this colour, asumming only pass names to functions
 			],
 			"settings": {
 				"fontStyle": "",
@@ -134,10 +135,9 @@
 		{
 			"name": "Access members",
 			"scope": [
-				"meta.bracket.square.access.cpp",
-				"variable.other.object.access.cpp", // works better as this colour, asumming only pass names to functions
 				"variable.other.property",
-				"variable.other.object.property.cpp"
+				"variable.other.object.property.cpp",
+				"variable.other.object.cpp"
 			],
 			"settings": {
 				"fontStyle": "",
@@ -168,6 +168,9 @@
 			"name": "Scope Qualifiers",
 			"scope": [
 				"storage.modifier",
+				"storage.type.modifier.access.public.cpp",
+				"storage.type.modifier.access.private.cpp",
+				"storage.type.modifier.access.protected.cpp",
 				"storage.type.modifier.access.control.public.cpp",
 				"storage.type.modifier.access.control.private.cpp",
 				"storage.type.modifier.access.control.protected.cpp"
